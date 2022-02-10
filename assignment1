@@ -1,0 +1,5 @@
+Read XML and parse it so as to get the SQL commands.
+Connection with MYSQL DataBase.
+Build Interface that perfroms CRUD operations on data. 
+Create Class(Generic or HardCoded) for storing result from interface.
+Write tests.

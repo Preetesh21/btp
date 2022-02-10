@@ -1,0 +1,21 @@
+Circuit: * C:\Users\verma\Desktop\Analog\EXP-5\IdealOPamp_adder.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri May 07 15:58:26 2021
+Total elapsed time: 0.080 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2103
+traniter = 2090
+tranpoints = 1046
+accept = 1046
+rejected = 0
+matrix size = 14
+fillins = 2
+solver = Normal
+Matrix Compiler1: 684 bytes object code size  0.3/0.1/[0.1]
+Matrix Compiler2: 1.19 KB object code size  0.1/0.2/[0.1]
+

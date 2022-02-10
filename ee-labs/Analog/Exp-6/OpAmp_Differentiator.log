@@ -1,0 +1,21 @@
+Circuit: * C:\Users\verma\Desktop\Analog\Exp-6\OpAmp_Differentiator.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri May 07 17:07:46 2021
+Total elapsed time: 0.049 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3720
+traniter = 3717
+tranpoints = 1724
+accept = 1547
+rejected = 177
+matrix size = 9
+fillins = 1
+solver = Normal
+Matrix Compiler1: 404 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.1
+

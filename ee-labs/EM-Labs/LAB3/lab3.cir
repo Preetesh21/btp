@@ -1,0 +1,10 @@
+% transient response observed for input pulse voltage
+V1 1 0 PULSE(0 20 10u 10n 10n 2n 500u)
+T1 1 0 2 0 TD=10e-6 Zo=50
+T2 2 0 3 0 TD=10e-6 Zo=50
+T3 3 0 4 0 TD=10e-6 Zo=50
+T4 4 0 5 0 TD=10e-6 Zo=50
+R 5 0  1Meg
+.tran 0 1000u [0 5u]
+.probe
+.end

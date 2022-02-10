@@ -1,0 +1,4 @@
+imap.gmail.com
+993
+verma.preetesh10@gmail.com
+Prashasti

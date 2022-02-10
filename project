@@ -1,0 +1,14 @@
+As part of the internship project modules
+1. Random data generation for unique user count (meaningful dataset generation)
+- Well distributed users in the dataset
+- Skewed user dataset
+- other dataset that can be useful
+
+2. HLL algorithm (either using the spark exposed interface, defining the HLL using TPL discussed here https://mungingdata.com/apache-spark/hyperloglog-count-distinct/ ). Define HLL algorithm UDAF, accumulator
+
+3. Define Map Accumulator for unique user counting
+- define the internal datastructure to store the data and expose only the count to the user
+
+4. Have the main class defined which takes input like the type of algorithm to use to calculate unique user counts (2 or 3)
+
+5. well established test suite having unit tests covering all the scenarios

@@ -1,0 +1,27 @@
+* Using subcircuit command:
+V1 1 0 sin(0 20 1.5k)
+R1 1 2 1e-3
+X1 2 0 3 tsection
+X2 3 0 4 tsection
+X3 4 0 5 tsection
+X4 5 0 6 tsection
+X5 6 0 7 tsection
+X6 7 0 8 tsection
+X7 8 0 9 tsection
+X8 9 0 10 tsection
+X9 10 0 11 tsection
+X10 11 0 12 tsection
+X11 12 0 13 tsection
+X12 13 0 14 tsection
+R2 14 0 89.3
+.subckt tsection 1 6 5
+R1 1 2 5
+L1 2 3 2m
+C1 3 6 0.47u
+R2 3 6 1e4
+R3 3 4 5
+L2 4 5 2m
+.ends tsection
+.tran 0 10ms [0 100ns]
+.probe
+

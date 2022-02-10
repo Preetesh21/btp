@@ -1,0 +1,51 @@
+
+**** 02/18/21 19:52:39 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ * Using subcircuit command:
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+V1 1 0 sin(0 20 1.5k)
+*Vac 1 0 ac 20
+R1 1 2 1e-3
+X1 2 0 3 tsection
+X2 3 0 4 tsection
+X3 4 0 5 tsection
+X4 5 0 6 tsection
+X5 6 0 7 tsection
+X6 7 0 8 tsection
+X7 8 0 9 tsection
+X8 9 0 10 tsection
+X9 10 0 11 tsection
+X10 11 0 12 tsection
+X11 12 0 13 tsection
+X12 13 0 14 tsection
+X13 14 0 15 tsection
+X14 15 0 16 tsection
+X15 16 0 17 tsection
+X16 17 0 18 tsection
+X17 18 0 19 tsection
+X18 19 0 20 tsection
+
+R2 21 0 1Meg
+.subckt tsection 1 6 5
+R1 1 2 5
+L1 2 3 2m
+C1 3 6 0.47u
+R2 3 6 1e4
+R3 3 4 5
+L2 4 5 2m
+.ends tsection
+.tran 0 10ms [0 100ns]
+*.ac lin 1 1.5k 1.5k
+*.print AC IM(R1) IP(R1) IR(R1) II(R1)
+.probe
+
+ERROR(ORPSIM-15141): Less than 2 connections at node 21.
+
